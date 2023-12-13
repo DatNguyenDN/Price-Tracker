@@ -9,7 +9,7 @@ import VideoBg from "../Assets/HomeVideo/video.mp4";
 import "./HomeStyles.css";
 const Home = () => {
     return (
-        <section className="page">
+        <section className="page h-screen">
             {/**overlay */}
             <div className="overlay"></div>
             {/**video */}
