@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+.flip-clock {
+    --fcc-flip-duration: 0.5s; /* transition duration when flip card */
+    --fcc-digit-block-width: 40px; /* width of digit card */
+    --fcc-digit-block-height: 60px; /* height of digit card, highly recommend in even number */
+    --fcc-digit-font-size: 30px; /* font size of digit */
+    --fcc-digit-color: black; /* color of digit */
+    --fcc-label-font-size: 10px; /* font size of label */
+    --fcc-label-color: white; /* color of label */
+    --fcc-background: white; /* background of digit card */
+    --fcc-divider-color: black; /* color of divider */
+    --fcc-divider-height: 1px; /* height of divider */
+    --fcc-separator-size: 6px; /* size of colon */
+    --fcc-separator-color: white; /* color of colon */
+  }
+
+.flip-clock {
+    font-family: 'Orbitron' !important;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+
+.page {
+    display: flex;
+    width:100wh;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.page__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page h1{ 
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.page h3{ 
+    color: #dfdfdf;
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 400px;
+    margin-bottom: 3rem;
+  
+}
+
+.btn__home {
+    width: 180px;
+    height: 64px;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+/** scren bigger than 900px*/
+@media (min-width: 900px) {
+    .page h1{
+        font-size: 4rem;
+    }
+    .page h3{
+        max-width: 600px;
+    }
+    .flip-clock {
+        --fcc-digit-block-width: 80px; /* width of digit card */
+        --fcc-digit-block-height: 120px; /* height of digit card, highly recommend in even number */
+        --fcc-digit-font-size: 80px; /* font size of digit */
+        --fcc-digit-color: black; /* color of digit */
+        --fcc-label-font-size: 30px; /* font size of label */
+    }
+}
+
+@media (max-width: 640px ){
+    .page h1{
+        font-size: 30px;
+    }
+    .page h3{
+        max-width: 300px;
+    }
+    .flip-clock {
+        --fcc-digit-block-width: 28px; /* width of digit card */
+        --fcc-digit-block-height: 40px; /* height of digit card, highly recommend in even number */
+        --fcc-digit-font-size: 30px; /* font size of digit */
+        --fcc-digit-color: black; /* color of digit */
+        --fcc-label-font-size: 10px; /* font size of label */
+    }
+    
+}
