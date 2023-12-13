@@ -43,7 +43,7 @@ const Navbar = () => {
         <>
             <nav
                 id="navbar__container"
-                className=" fixed z-20 bg-opacity-90 left-0 top-0   w-full h-[90px] flex flex-wrap items-center  justify-between p-3 text-[--color]font-poppin font-semibold uppercase text-primary backdrop-blur-[100px]  "
+                className="fixed z-20 bg-none left-0 top-0   w-full h-[90px] flex flex-wrap items-center  justify-between p-3 text-[--color]font-poppin font-semibold uppercase text-primary backdrop-blur-[100px]  "
             >
                 <div className="hidden max-sm:flex max-md:flex">
                     <label className="hamburger">
