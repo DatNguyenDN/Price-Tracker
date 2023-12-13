@@ -6,8 +6,8 @@ function App() {
 
 
     // const {darkMode, toggleDarkMode} = useDarkMode();
-    {/**className={` 
-       ${darkMode ? "dark" : "light"}`} */}
+    /**className={` 
+       ${darkMode ? "dark" : "light"}`} */
 
     return (
        <div className="h-screen"  >
