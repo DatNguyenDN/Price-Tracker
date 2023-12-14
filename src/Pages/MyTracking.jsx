@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const MyTracking = () => {
   return (
-    <div className="hero  p-[5%] h-fit max-sm:bg-[--bgc] text-primary  ">
+    <div className="hero  p-[5%]  max-sm:bg-[--bgc] text-primary  ">
   <div className="hero-content flex-col lg:flex-row gap-10">
     <img className="max-w-sm lg:w-[50%] rounded-lg shadow-2xl" 
     src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" 
