@@ -13,7 +13,7 @@ const Home = () => {
             {/**overlay */}
             <div className="overlay"></div>
             {/**video */}
-            <video src={VideoBg} autoPlay loop={true} muted></video>
+            <video src={VideoBg} autoPlay={true} loop={true} muted={true}></video>
             {/** content */}
             <div className="page__content">
                 <h1 className="animate__animated animate__backInLeft ">Comming Soon</h1>
